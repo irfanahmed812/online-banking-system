@@ -1,0 +1,91 @@
+/* logo */
+.logo img {
+    width: 92px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.logo h4 {
+    color: #ffe07d;
+    font-size: 16px;
+}
+
+.logo span {
+    color: #9fd4fe;
+}
+
+/* nav */
+.nav-link:focus,
+.nav-link:hover {
+    color: #ffe07d;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #ffe07d;
+}
+
+.nav-bg {
+    background-color: #4d8675;
+}
+
+/* card logo */
+.card-logo img {
+    width: 160px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card-logo h4 {
+    color: #fdd34a;
+}
+
+.card-logo span {
+    color: #53b1fd;
+}
+
+.card-header {
+    background-color: #f0d069ea;
+    color: black;
+}
+
+/* hover */
+.card-hover:hover {
+    transition: all 0.4s ease;
+    box-shadow: rgb(192, 226, 185) 0px 2px 8px 0px;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(104, 96, 96);
+}
+
+.footer-copy a {
+    text-decoration: none;
+    color: #fdd34a;
+}
+
+p {
+    margin-top: 1px;
+    margin-bottom: 0rem;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 900px) {
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        color: rgb(84 173 254);
+        background-color: #f6f6f6;
+        border: var(--bs-border-width) solid rgb(155 212 254);
+    }
+}

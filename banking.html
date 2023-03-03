@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/banking.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Dashboard | Online Banking System</title>
+</head>
+
+<body class="bg-dark-subtle">
+
+    <main>
+        <!-- header -->
+        <section>
+            <nav class="navbar navbar-expand-lg nav-bg bg-gradient">
+                <div class="container-fluid container logo">
+                    <a class="navbar-brand" href="banking.html"><img src="images/logo.png" alt="">
+                        <h4>Online <span>Bank</span></h4>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"><i
+                                        class="fa-solid fa-gauge"></i> Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-clock-rotate-left"></i>
+                                    History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-right-left"></i> Exchange</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-headset"></i> Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-danger" href="index.html"> Log out <i
+                                        class="fa-solid fa-right-from-bracket"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- welcome text -->
+        <section class="text-white container pt-4">
+            <div class="text-black">
+                <h1>Have a nice Day <span class="fw-bold text-success text-decoration-underline">ADMIN</span></h1>
+            </div>
+        </section>
+
+        <!-- balance, deposit, withdraw -->
+        <section>
+            <div class="container pt-5 pb-4">
+                <div class="text-center text-primary">
+                    <h1 class="display-3 fw-semibold">Dashboard</h1>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
+                    <div class="col">
+                        <div class="card card-hover bg-info bg-gradient text-white">
+                            <div class="card-body text-center">
+                                <h3 class="card-title fw-light">Deposit</h3>
+                                <h2 class="card-text">$ <span id="total-deposit">000</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover bg-danger bg-gradient text-white">
+                            <div class="card-body text-center">
+                                <h3 class="card-title fw-light">Withdraw</h3>
+                                <h2 class="card-text">$ <span id="total-withdraw">000</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-hover bg-success bg-gradient text-white">
+                            <div class="card-body text-center">
+                                <h3 class="card-title fw-light">Balance</h3>
+                                <h2 class="card-text">$ <span id="total-balance">2500</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- withdraw and deposit input -->
+        <section>
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card  bg-success-subtle">
+                            <div class="card-body">
+                                <h5 class="card-title pb-2">Please Deposit</h5>
+                                <div class="pt-2 pb-4">
+                                    <input type="number" class="form-control" name="" id="deposit-input"
+                                        placeholder="$ Deposit Ammount" min="0">
+                                </div>
+                                <div class="pb-3">
+                                    <button class="btn btn-success" id="deposit-button">Deposit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- withdraw -->
+                    <div class="col-sm-6 pb-5">
+                        <div class="card bg-danger-subtle">
+                            <div class="card-body">
+                                <h5 class="card-title pb-2">Withdraw</h5>
+                                <div class="pt-2 pb-4">
+                                    <input type="number" class="form-control" name="" id="withdraw-input"
+                                        placeholder="$ Withdraw Ammount" min="0">
+                                </div>
+                                <div class="pb-3">
+                                    <button class="btn btn-danger" id="withdraw-button">Withdraw</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="text-white text-center footer-copy">
+            <p>&copy; 2023 <a href="index.html">Online Bank</a> | Created by <a
+                    href="https://www.facebook.com/irfanahmed812i" target="_blank">Irfan Ahmed</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/banking.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cf366aebbb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
